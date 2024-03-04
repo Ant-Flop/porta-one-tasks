@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 100%;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* *---*---*---*---* */
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.title {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-bottom: 1px solid #dee2e6;
+  background-color: #000;
+  color: #fff;
+}
+
+.upload-form {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  display: flex;
+  padding: 10px;
+}
+
+#file-upload {
+  max-width: 300px;
+  content: "Pick file";
+}
+
+.calculate-form {
+  grid-column-start: 1;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display: flex;
+  padding: 10px;
+}
+
+.calculate-button-field,
+.upload-button-field {
+  display: grid;
+}
+
+.upload-spinner {
+  padding-top: 40px;
+  padding-left: 20px;
+  display: none;
+}
+
+#calculate {
+  max-width: 100px;
+}
+
+.result-table {
+  grid-column-start: 1;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  padding: 10px;
+  max-width: 700px;
+  overflow-x: auto;
+}
+
+th,
+td {
+  width: 200px;
+  max-width: 300px;
+  white-space: normal;
+  word-wrap: break-word;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+th {
+  font-weight: bold;
+}

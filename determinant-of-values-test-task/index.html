@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Value-Determiner-Test-Task</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="css/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title"><h4>Determinant of values</h4></div>
+      <div class="upload-form">
+        <div class="upload-button-field">
+          <label for="file-upload" class="form-label"
+            ><h6>Upload file</h6></label
+          >
+          <input
+            class="form-control form-control-lg"
+            id="file-upload"
+            type="file"
+          />
+        </div>
+        <div class="upload-spinner">
+          <div class="spinner-border text-success" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </div>
+      <div class="calculate-form">
+        <div class="calculate-button-field">
+          <label for="calculate" class="form-label"><h6>Calculate</h6></label>
+          <input
+            type="button"
+            class="btn btn-outline-secondary btn-outline-success"
+            id="calculate"
+            value="Calculate"
+            disabled
+          />
+        </div>
+      </div>
+      <div class="result-table">
+        <label for="formFileLg" class="form-label"><h6>Result table</h6></label>
+        <table class="table table-striped table-bordered table-hover">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>The maximum number in the file:</th>
+              <td id="max-number"></td>
+            </tr>
+            <tr>
+              <th>The minimum number in the file:</th>
+              <td id="min-number"></td>
+            </tr>
+            <tr>
+              <th>Median:</th>
+              <td id="median"></td>
+            </tr>
+            <tr>
+              <th>Arithmetic mean value:</th>
+              <td id="average"></td>
+            </tr>
+            <tr>
+              <th>The largest sequence of numbers that increases:</th>
+              <td id="longest-increasing"></td>
+            </tr>
+            <tr>
+              <th>The largest sequence of numbers that is decreasing:</th>
+              <td id="longest-decreasing"></td>
+            </tr>
+            <tr>
+              <th>Calculation time (seconds):</th>
+              <td id="calculation-time"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
